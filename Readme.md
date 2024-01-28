@@ -1,7 +1,7 @@
 # HTML and CSS In 1 Week
 
 I am trying to learn HTML and CSS within the one week period. \
-i will try to cover most of the things. Let's see what i can learn on these days.
+I will try to cover most of the things. Let's see what i can learn on these days.
 
 ## Let's Begin
 
