@@ -50,3 +50,5 @@ p {
 ```
 
 ## Challange Topics
+
+- [HTML Basics](/Day_1_HTML_Basics/readme.md)
