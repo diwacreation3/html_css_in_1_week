@@ -1,5 +1,5 @@
 # 🌿 CSS Position
-# 🍃 [Display](#display-1)
+
 
 
 The position property in CSS only has a few valid values, but those values can lead to endless design possibilities which makes learning position quite difficult.
@@ -86,4 +86,4 @@ The final position value is sticky. this position is a combination of both fixed
     top: 10px;
 }
 ```
-# Display
+
