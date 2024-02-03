@@ -56,3 +56,5 @@ p {
 - [CSS Introduction](/Day_3_CSS_Intro/Readme.md)
 - [CSS inheritance specificity Box Model](/Day_4_CSS_Inheritance-specificity-boxModel/Readme.md)
 - [CSS Positions](/Day_5_Position/Readme.md)
+
+- [CSS Flexbox Calc](/Day_6_Flexbox_calc/Readme.md)
