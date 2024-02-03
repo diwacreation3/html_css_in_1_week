@@ -192,3 +192,32 @@ The column direction completely swaps our axes so now the main axis is vertical 
 ![](../img/column.png)
 
 # CSS Calc
+First, we need to talk about what CSS calc is and how you use it. In the simplest terms possible CSS calc is just a CSS function, similar to rgb, var, etc. that lets you do addition, subtraction, division, and multiplication on various CSS units. Here is a simple example.
+
+```css
+.class{
+    width: calc(200px + 100px);
+}
+```
+
+### Combining Different Units
+That’s right. With CSS calc we can combine together different CSS units to create values that are impossible to represent with traditional CSS units. For example what if we wanted to create a box that was 30px away from being 100vw wide. Essentially a 100vw box that had 30px of space removed from it.
+
+```css
+.class{
+    width: calc(100vw - 30px);
+}
+```
+That’s all you need to do. Just put the 100vw and the 30px into your calc function and CSS will take care of all the complex math for you. Now no matter how wide or small your screen is the box will always be 30px smaller than the full width of the screen.
+
+Now this alone is enough to make CSS calc amazing, but you can go a step further and combine this with CSS variables.
+
+### CSS variables And Calc
+Now with that out of the way can talk about how you can use CSS variable with calc. All you need to do is replace on of your values in the calc function with variable
+```css
+.class{
+    --w: 100px;
+    width: calc(var(--w) *2);
+}
+```
+We now have a box that is 200px wide since we are multiplying the 100px --w variable by 2.
