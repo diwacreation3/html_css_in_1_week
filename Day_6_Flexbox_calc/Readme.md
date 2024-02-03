@@ -156,3 +156,39 @@ This property allows us to determine which direction each axis corresponds to as
 row(default)
 The default direction is row. This means the main axis is horizontal while the cross axis is vertical. This also means the main axis starts on the left while the cross axis starts at the top.
 
+```css
+.flex-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-iteams: flex-start;
+}
+```
+![](../img/row.png)
+
+Similar to row we have row-reverse. This direction does not swap the main/cross axis, but it does swap where the main axis starts. The main axis now starts on the right while the cross axis does not change and still starts at the top. You will see below that our items start on the right side of the container and are ordered right to left since we are using the reverse ordering
+
+```css
+.flex-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+```
+#### Column
+The column direction completely swaps our axes so now the main axis is vertical and the cross axis is horizontal. This means that if you use justify-content you will be laying out elements in the vertical direction and align-items will work in the horizontal direction.
+
+```css
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+```
+![](../img/column.png)
+
+# CSS Calc
