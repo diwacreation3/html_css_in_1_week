@@ -58,3 +58,5 @@ p {
 - [CSS Positions](/Day_5_Position/Readme.md)
 
 - [CSS Flexbox Calc](/Day_6_Flexbox_calc/Readme.md)
+
+- [Logical properties](/Day_7_Logical-custom-properties/Readme.md)
