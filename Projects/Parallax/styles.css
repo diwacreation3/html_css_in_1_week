@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serifs ;
+}
+
+body
+{
+    
+    background: #0a2a43;
+    min-height: 1500px;
+}
+
+section
+{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #0a2a43, transparent);
+    z-index: 10000;
+}
+section::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:  #0a2a43;
+    z-index: 10000;
+    mix-blend-mode: color;
+}
+
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#road
+{
+    z-index: 2;
+}
+#text
+{
+position: relative;
+color: #fff;
+font-size: 10em;
+z-index: 1;
+}
+.content{
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+   
+}
+ .title{
+    color:#fff;
+    font-size: 36px;
+    text-align: center;
+    padding: 6px;
+}
+.content p{
+    font-size: medium;
+    color: #fff;
+    text-align: center;
+    display: grid;
+    padding: 5px;
+   
+
+}

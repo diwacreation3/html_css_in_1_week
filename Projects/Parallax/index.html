@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Effect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section>
+        <img src="img/bg.jpg" id="bg">
+        <img src="img/moon.png" id="moon">
+        <img src="img/mountain.png" id="mountain">
+        <img src="img/road.png" id="road">
+        <h2 id="text">Moon Light</h2>
+    </section>
+    <div class="content">
+        <h2 class="title">Moon Light parallax Background</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur beatae facilis atque consequuntur culpa! Corrupti atque sit totam, magni voluptate eum mollitia ipsam eveniet pariatur, distinctio ea aut ad? Fugiat amet, ipsum, sit hic impedit, alias adipisci non repudiandae necessitatibus nulla ullam iusto ducimus! Repellat maiores, non sed nihil inventore nesciunt excepturi amet voluptate sint minus explicabo, quis natus eum ducimus quas quasi nemo sit. Culpa quasi sit non laborum omnis distinctio labore, facilis quaerat optio quisquam. Sint, numquam nobis. Et adipisci hic officia ab delectus, cum aliquam reprehenderit alias harum, ratione doloremque maiores, aut consectetur quas doloribus unde ex.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut architecto corrupti, dolore voluptatem enim esse. Blanditiis neque fugiat quaerat ad corrupti consectetur doloremque quibusdam nisi possimus officia reiciendis voluptatibus aperiam accusantium deleniti mollitia vero vitae maxime eum quasi sed dolorem nobis ipsum, explicabo rerum. Recusandae voluptatem exercitationem est tempore laudantium consequuntur beatae porro aliquid quidem esse magnam, culpa expedita nam sit quasi totam, saepe accusantium magni. Facilis cumque quis est magnam doloremque omnis. Dicta eum cumque cum, quia nulla mollitia doloremque quidem aliquid ut aliquam. Dignissimos perspiciatis nihil dolorum nobis officiis recusandae eaque harum saepe, quam molestias placeat rerum temporibus aliquam necessitatibus minus? Quod eaque ipsam, tempore sed autem repellat voluptatibus et tempora quibusdam omnis. Aut maiores eius rerum amet quae expedita distinctio, veritatis recusandae! Veniam, officiis excepturi sit modi accusamus iusto animi adipisci fugiat totam quidem ea voluptatibus, aperiam optio corrupti sunt a quibusdam, expedita doloremque mollitia odio sint.</p>
+    </div>
+
+    <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let road = document.getElementById("road");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll' ,function(){
+
+            var value = window.scrollY;
+
+            bg.style.top = value * 0.5 + 'px';
+            moon.style.left = -value * 0.5 + 'px';
+            mountain.style.top = -value * 0.15 + 'px';
+            road.style.top = value * 0.15 + 'px';
+            text.style.top = value * 1 + 'px';
+
+
+        })
+
+    </script>
+</body>
+</html>
